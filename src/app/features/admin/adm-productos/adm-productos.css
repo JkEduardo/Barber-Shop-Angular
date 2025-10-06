@@ -1,0 +1,203 @@
+.main-title {
+  width: 400px;
+  height: 150px;
+  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/logoOf.png');
+  background-repeat: no-repeat;
+  background-size: contain;  
+  background-position: center;
+  margin: 20px auto;
+  text-indent: -9999px;
+}
+.header-row {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+.breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 0 10px 0;
+  font-family: 'Rye', cursive;
+  width: 40%;
+}
+
+.breadcrumb-dashboard, .breadcrumb-admin {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.836);
+  cursor: pointer;
+  margin-right: 0px;
+  transition: color 0.2s ease;
+}
+.breadcrumb-Product{
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.breadcrumb-dashboard:hover, .breadcrumb-admin:hover {
+  color: rgb(71, 131, 243);  
+}
+
+.breadcrumb-separator {
+  font-size: 1.2rem;
+  margin: 0 5px;
+  color: #555;
+}
+
+.actions {
+  margin: 0px
+}
+
+.btn-new {
+  font-family: 'rye', cursive;
+  font-size: 16px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 30px 0;
+}
+.filter-input,
+.filter-select {
+  width: 230px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  font-family: 'Rye', cursive;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 10px 10px 0 0;
+  outline: none;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filter-input:hover,
+.filter-select:hover {
+  border-bottom-color: rgb(71, 131, 243);
+}
+
+.filter-input:focus,
+.filter-select:focus {
+  border-bottom: 3px solid rgb(71, 131, 243);
+  box-shadow: 0 4px 8px rgba(71, 131, 243, 0.2);
+  transform: scale(1.03);
+}
+
+.filter-select {
+  appearance: none; 
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, transparent 70%, rgba(71, 131, 243, 0.2) 100%);
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em auto;
+}
+
+.filter-select option {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.product-table th{
+  padding: auto;
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Rye', cursive;
+  height: 50px;
+}
+.product-table td {
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #030303;
+  text-align: center;
+}
+
+.product-table tr:hover {
+  background-color: rgba(71, 131, 243, 0.1);
+}
+
+.btn-edit, .btn-delete {
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-edit {
+  font-family: 'rye', cursive;
+  font-size: 12px;
+  background-color: #507e51;
+  color: white;
+}
+
+.btn-delete {
+  font-family: 'rye', cursive;
+  font-size: 12px;
+  background-color: #7c3e39;
+  color: white;
+}
+
+.pagination {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn-pagination {
+  font-family: 'rye', cursive;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 2px solid #0f0f0f;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.btn-pagination-n {
+  font-family: 'rye', cursive;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  border-color: #0f0f0f;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.btn-new:hover, .btn-pagination:hover, .btn-edit:hover, .btn-delete:hover, .btn-pagination-n:hover {
+  background-color: rgb(71, 131, 243);
+}
+span{
+  font-family: 'Rye', cursive;
+  font-size: 18px;
+}
+.pagination-info {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+  font-family: 'Rye', cursive;
+}

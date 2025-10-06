@@ -1,0 +1,24 @@
+<div class="admin-dashboard">
+  <h1 class="main-title"></h1>
+
+  <div class="breadcrumb">
+    <span class="breadcrumb-dashboard" (click)="goTo('/')">Dashboard</span>
+    <span class="breadcrumb-separator"> /</span>
+    <span class="breadcrumb-admin">Admin :</span>
+  </div>
+
+  <div class="card-container">
+    <div class="card card-admin-user" (click)="goTo('admin/usuarios')">
+    </div>
+    <div class="card card-admin-product" (click)="goTo('admin/productos')">
+    </div>
+    <div class="card card-admin-brand" (click)="goTo('admin/marcas')">
+    </div>
+    <div class="card card-admin-service" (click)="goTo('admin/servicios')">
+    </div>
+    <div class="card card-admin-history" (click)="goTo('admin/historial')">
+    </div>
+    <div class="card card-admin-config" (click)="goTo('admin/configuracion')">
+    </div>
+  </div>
+</div>

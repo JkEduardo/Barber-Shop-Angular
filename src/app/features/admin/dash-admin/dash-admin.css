@@ -1,0 +1,119 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Rye', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  
+}
+
+.main-title {
+  width: 400px;
+  height: 150px;
+  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/logoOf.png');
+  background-repeat: no-repeat;
+  background-size: contain;  
+  background-position: center;
+  margin: 40px -15px 40px 40px;
+  text-indent: -9999px;
+}
+
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 80px;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #fff;
+  border-radius: 16px;
+  width: 220px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; 
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.836);
+
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-position: center 40%;
+}
+.card:hover {
+  background-color: rgb(71, 131, 243);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.card-admin-user {
+  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/admin_user.png');
+}
+
+.card-admin-product {
+  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/admin_product.png');
+}
+
+.card-admin-brand {
+  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/admin_brand.png');
+}
+
+.card-admin-service {
+  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/admin_service.png');
+}
+.card-admin-history {
+  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/history_sales_service.png');
+}
+.card-admin-config {
+  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/config.png');
+}
+
+.card h2 {
+  font-family: 'Rye', serif;
+  font-size: 1.5rem;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0 30px 0;
+  font-family: 'Rye', cursive;
+  width: 40%;
+}
+
+.breadcrumb-dashboard {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.836);
+  cursor: pointer;
+  margin-right: 0px;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-dashboard:hover {
+  color: rgb(71, 131, 243); 
+}
+
+.breadcrumb-separator {
+  font-size: 1.2rem;
+  margin: 0 5px;
+  color: #555;
+}
+
+.breadcrumb-admin {
+  font-size: 1.5rem;
+  color: #444;
+}

@@ -1,0 +1,98 @@
+<body>
+  <!-- Loading -->
+  <div *ngIf="loading">
+    <app-loading></app-loading>
+  </div>
+
+  <!-- Contenido -->
+  <div *ngIf="!loading">
+    <h1 class="main-title"></h1>
+
+    <!-- Breadcrumb + botón -->
+    <div class="header-row">
+      <div class="breadcrumb">
+        <span class="breadcrumb-dashboard" (click)="goTo('/')">Dashboard</span>
+        <span class="breadcrumb-separator"> /</span>
+        <span class="breadcrumb-admin" (click)="goTo('admin')">Administración</span>
+        <span class="breadcrumb-separator"> /</span>
+        <span class="breadcrumb-Product">Productos:</span>
+      </div>
+
+      <div class="actions">
+        <button class="btn-new">+ Nuevo Producto</button>
+      </div>
+    </div>
+
+    <div class="filters">
+      <input
+        type="text"
+        placeholder="Buscar producto..."
+        [(ngModel)]="filters.name"
+        (input)="filterProducts()"
+        class="filter-input"
+      />
+
+      <select
+        [(ngModel)]="filters.brandId"
+        (change)="search()"
+        class="filter-select"
+      >
+        <option [ngValue]="0">Filtrar por marca</option>
+        <option *ngFor="let b of brands" [ngValue]="b.id">{{ b.name }}</option>
+      </select>
+      
+
+    </div>
+
+    <!-- 🧾 Tabla de productos -->
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Costo</th>
+          <th>Cantidad</th>
+          <th>Marca</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of paginatedProducts">
+          <td>{{ product.name }}</td>
+          <td>{{ product.description }}</td>
+          <td>{{ product.cost | currency:'MXN' }}</td>
+          <td>{{ product.quantity }}</td>
+          <td>{{ getBrandName(product.brandId) }}</td>
+          <td>
+            <button class="btn-edit">Editar</button>
+            <button class="btn-delete">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+      
+    <div class="pagination">
+      
+        <button class="btn-pagination" (click)="previousPage()" [disabled]="page === 1">Anterior</button>
+
+
+        <ng-container *ngFor="let p of pages">
+          <button
+            class="btn-pagination-n"
+            [class.active]="p === page"
+            (click)="goToPage(p)"
+          >
+            {{ p }}
+          </button>
+        </ng-container>
+
+      <button class="btn-pagination" (click)="nextPage()" [disabled]="page === totalPages">Siguiente</button>
+    </div>
+    <br>
+    <div class="pagination-info">
+        Mostrando {{ startRecord }} - {{ endRecord }} de {{ filteredProducts.length }} registros
+      </div>
+
+  </div>
+</body>
