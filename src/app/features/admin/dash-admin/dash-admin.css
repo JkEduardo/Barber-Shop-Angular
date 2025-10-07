@@ -16,7 +16,7 @@ body {
 .main-title {
   width: 400px;
   height: 150px;
-  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/logoOf.png');
+  background-image: url('C:/barber-shop/src/assets/images/logoOf.png');
   background-repeat: no-repeat;
   background-size: contain;  
   background-position: center;
@@ -59,25 +59,25 @@ body {
 }
 
 .card-admin-user {
-  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/admin_user.png');
+  background-image: url('C:/barber-shop/src/assets/images/admin_user.png');
 }
 
 .card-admin-product {
-  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/admin_product.png');
+  background-image: url('C:/barber-shop/src/assets/images/admin_product.png');
 }
 
 .card-admin-brand {
-  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/admin_brand.png');
+  background-image: url('C:/barber-shop/src/assets/images/admin_brand.png');
 }
 
 .card-admin-service {
-  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/admin_service.png');
+  background-image: url('C:/barber-shop/src/assets/images/admin_service.png');
 }
 .card-admin-history {
-  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/history_sales_service.png');
+  background-image: url('C:/barber-shop/src/assets/images/history_sales_service.png');
 }
 .card-admin-config {
-  background-image: url('C:/ProyectAngular1/mi-proyecto-moderno-1/src/assets/config.png');
+  background-image: url('C:/barber-shop/src/assets/images/config.png');
 }
 
 .card h2 {
